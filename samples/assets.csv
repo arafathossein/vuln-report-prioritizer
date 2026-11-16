@@ -1,0 +1,7 @@
+host,name,criticality,internet_facing,owner
+203.0.113.10,Public website,high,yes,Web team
+203.0.113.20,VPN gateway,critical,yes,Network team
+10.20.1.10,Domain controller,critical,no,IT operations
+10.20.1.30,Payroll database,critical,no,Finance IT
+10.20.2.0/24,Office workstations,medium,no,Service desk
+10.20.3.0/24,Test lab,low,no,R&D

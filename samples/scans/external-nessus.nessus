@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<NessusClientData_v2>
+  <Report name="External perimeter 2026-11-14">
+    <ReportHost name="203.0.113.10">
+      <HostProperties>
+        <tag name="host-ip">203.0.113.10</tag>
+        <tag name="host-fqdn">www.example.com</tag>
+      </HostProperties>
+      <ReportItem port="443" svc_name="www" protocol="tcp" severity="3" pluginID="900101" pluginName="Apache 2.4.49 Path Traversal and File Disclosure" pluginFamily="Web Servers">
+        <cve>CVE-2021-41773</cve>
+        <cvss3_base_score>7.5</cvss3_base_score>
+        <exploit_available>true</exploit_available>
+        <synopsis>The web server allows reading files outside the document root.</synopsis>
+        <solution>Upgrade Apache HTTP Server to 2.4.51 or later.</solution>
+      </ReportItem>
+      <ReportItem port="443" svc_name="www" protocol="tcp" severity="3" pluginID="900102" pluginName="HTTP/2 Rapid Reset Denial of Service" pluginFamily="Web Servers">
+        <cve>CVE-2023-44487</cve>
+        <cvss3_base_score>7.5</cvss3_base_score>
+        <synopsis>The HTTP/2 implementation can be overloaded by rapid stream resets.</synopsis>
+        <solution>Apply the web server vendor's update, or disable HTTP/2 until patched.</solution>
+      </ReportItem>
+      <ReportItem port="22" svc_name="ssh" protocol="tcp" severity="2" pluginID="900103" pluginName="SSH Terrapin Prefix Truncation Weakness" pluginFamily="Misc.">
+        <cve>CVE-2023-48795</cve>
+        <cvss3_base_score>5.9</cvss3_base_score>
+        <synopsis>The SSH server supports cipher modes affected by the Terrapin attack.</synopsis>
+        <solution>Update the SSH server, or disable ChaCha20-Poly1305 and Encrypt-then-MAC modes.</solution>
+      </ReportItem>
+      <ReportItem port="0" svc_name="general" protocol="tcp" severity="0" pluginID="19506" pluginName="Nessus Scan Information" pluginFamily="Settings">
+        <synopsis>Information about the scan.</synopsis>
+      </ReportItem>
+    </ReportHost>
+    <ReportHost name="203.0.113.20">
+      <HostProperties>
+        <tag name="host-ip">203.0.113.20</tag>
+        <tag name="host-fqdn">vpn.example.com</tag>
+      </HostProperties>
+      <ReportItem port="443" svc_name="www" protocol="tcp" severity="4" pluginID="900201" pluginName="Fortinet FortiOS SSL VPN Path Traversal" pluginFamily="Firewalls">
+        <cve>CVE-2018-13379</cve>
+        <cvss3_base_score>9.8</cvss3_base_score>
+        <exploit_available>true</exploit_available>
+        <synopsis>The SSL VPN portal lets an unauthenticated user download system files, including session data.</synopsis>
+        <solution>Upgrade FortiOS to a fixed release and reset all VPN user passwords.</solution>
+      </ReportItem>
+      <ReportItem port="22" svc_name="ssh" protocol="tcp" severity="3" pluginID="900202" pluginName="OpenSSH Remote Code Execution (regreSSHion)" pluginFamily="Misc.">
+        <cve>CVE-2024-6387</cve>
+        <cvss3_base_score>8.1</cvss3_base_score>
+        <exploit_available>true</exploit_available>
+        <synopsis>The SSH server is affected by a signal handler race condition.</synopsis>
+        <solution>Update OpenSSH to 9.8p1 or later.</solution>
+      </ReportItem>
+      <ReportItem port="443" svc_name="www" protocol="tcp" severity="2" pluginID="900203" pluginName="SSL Certificate Expiry" pluginFamily="General">
+        <cvss3_base_score>5.3</cvss3_base_score>
+        <synopsis>The certificate has expired.</synopsis>
+        <solution>Renew the certificate.</solution>
+      </ReportItem>
+    </ReportHost>
+  </Report>
+</NessusClientData_v2>

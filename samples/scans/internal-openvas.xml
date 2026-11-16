@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report id="5f0c1d2e-0000-4000-8000-000000000001" format_id="a994b278-1f62-11e1-96ac-406186ea4fc5" extension="xml" content_type="text/xml">
+  <name>2026-11-14T02:00:00Z</name>
+  <report id="5f0c1d2e-0000-4000-8000-000000000001">
+    <scan_run_status>Done</scan_run_status>
+    <results start="1" max="100">
+      <result id="r-001">
+        <name>Microsoft Windows Netlogon Elevation of Privilege Vulnerability (Zerologon)</name>
+        <host>10.20.1.10<asset asset_id="a1"/><hostname>dc01.corp.example</hostname></host>
+        <port>445/tcp</port>
+        <nvt oid="1.3.6.1.4.1.25623.1.0.990001">
+          <type>nvt</type><name>Microsoft Windows Netlogon Elevation of Privilege Vulnerability (Zerologon)</name>
+          <family>Windows : Microsoft Bulletins</family><cvss_base>10.0</cvss_base>
+          <tags>cvss_base_vector=AV:N/AC:L/Au:N/C:C/I:C/A:C|summary=The Netlogon protocol allows an unauthenticated attacker to take over the domain controller.|solution_type=VendorFix</tags>
+          <solution type="VendorFix">Install the August 2020 or later cumulative update and enforce secure RPC for Netlogon.</solution>
+          <refs><ref type="cve" id="CVE-2020-1472"/></refs>
+        </nvt>
+        <threat>High</threat><severity>10.0</severity><qod><value>80</value></qod>
+      </result>
+      <result id="r-002">
+        <name>SSL/TLS: Report Vulnerable Cipher Suites for HTTPS (SWEET32)</name>
+        <host>10.20.1.10<asset asset_id="a1"/><hostname>dc01.corp.example</hostname></host>
+        <port>3269/tcp</port>
+        <nvt oid="1.3.6.1.4.1.25623.1.0.990002">
+          <type>nvt</type><name>SSL/TLS: Report Vulnerable Cipher Suites for HTTPS (SWEET32)</name>
+          <family>SSL and TLS</family><cvss_base>7.5</cvss_base>
+          <tags>summary=The service accepts 64-bit block ciphers such as 3DES.|solution_type=Mitigation</tags>
+          <solution type="Mitigation">Disable 3DES and other 64-bit block ciphers in the TLS configuration.</solution>
+          <refs><ref type="cve" id="CVE-2016-2183"/></refs>
+        </nvt>
+        <threat>High</threat><severity>7.5</severity><qod><value>98</value></qod>
+      </result>
+      <result id="r-003">
+        <name>Microsoft Windows SMB Server Multiple Vulnerabilities (MS17-010)</name>
+        <host>10.20.2.41<asset asset_id="a2"/><hostname>ws-acc-041</hostname></host>
+        <port>445/tcp</port>
+        <nvt oid="1.3.6.1.4.1.25623.1.0.990003">
+          <type>nvt</type><name>Microsoft Windows SMB Server Multiple Vulnerabilities (MS17-010)</name>
+          <family>Windows : Microsoft Bulletins</family><cvss_base>8.1</cvss_base>
+          <tags>summary=SMBv1 on this host is affected by remote code execution flaws.|solution_type=VendorFix</tags>
+          <solution type="VendorFix">Apply MS17-010 and disable SMBv1.</solution>
+          <refs><ref type="cve" id="CVE-2017-0144"/><ref type="cve" id="CVE-2017-0145"/></refs>
+        </nvt>
+        <threat>High</threat><severity>8.1</severity><qod><value>95</value></qod>
+      </result>
+      <result id="r-004">
+        <name>Microsoft Windows SMB Server Multiple Vulnerabilities (MS17-010)</name>
+        <host>10.20.2.57<asset asset_id="a3"/><hostname>ws-acc-057</hostname></host>
+        <port>445/tcp</port>
+        <nvt oid="1.3.6.1.4.1.25623.1.0.990003">
+          <type>nvt</type><name>Microsoft Windows SMB Server Multiple Vulnerabilities (MS17-010)</name>
+          <family>Windows : Microsoft Bulletins</family><cvss_base>8.1</cvss_base>
+          <solution type="VendorFix">Apply MS17-010 and disable SMBv1.</solution>
+          <refs><ref type="cve" id="CVE-2017-0144"/><ref type="cve" id="CVE-2017-0145"/></refs>
+        </nvt>
+        <threat>High</threat><severity>8.1</severity><qod><value>95</value></qod>
+      </result>
+      <result id="r-005">
+        <name>Microsoft Windows SMB Server Multiple Vulnerabilities (MS17-010)</name>
+        <host>10.20.2.63<asset asset_id="a4"/><hostname>ws-hr-063</hostname></host>
+        <port>445/tcp</port>
+        <nvt oid="1.3.6.1.4.1.25623.1.0.990003">
+          <type>nvt</type><name>Microsoft Windows SMB Server Multiple Vulnerabilities (MS17-010)</name>
+          <family>Windows : Microsoft Bulletins</family><cvss_base>8.1</cvss_base>
+          <solution type="VendorFix">Apply MS17-010 and disable SMBv1.</solution>
+          <refs><ref type="cve" id="CVE-2017-0144"/><ref type="cve" id="CVE-2017-0145"/></refs>
+        </nvt>
+        <threat>High</threat><severity>8.1</severity><qod><value>95</value></qod>
+      </result>
+      <result id="r-006">
+        <name>Microsoft Windows Remote Desktop Services Remote Code Execution Vulnerability (BlueKeep)</name>
+        <host>10.20.2.41<asset asset_id="a2"/><hostname>ws-acc-041</hostname></host>
+        <port>3389/tcp</port>
+        <nvt oid="1.3.6.1.4.1.25623.1.0.990004">
+          <type>nvt</type><name>Microsoft Windows Remote Desktop Services Remote Code Execution Vulnerability (BlueKeep)</name>
+          <family>Windows : Microsoft Bulletins</family><cvss_base>9.8</cvss_base>
+          <solution type="VendorFix">Install the May 2019 security update; enable Network Level Authentication.</solution>
+          <refs><ref type="cve" id="CVE-2019-0708"/></refs>
+        </nvt>
+        <threat>High</threat><severity>9.8</severity><qod><value>95</value></qod>
+      </result>
+      <result id="r-007">
+        <name>Apache Log4j Remote Code Execution Vulnerability (Log4Shell)</name>
+        <host>10.20.3.15<asset asset_id="a5"/><hostname>lab-build-15</hostname></host>
+        <port>8080/tcp</port>
+        <nvt oid="1.3.6.1.4.1.25623.1.0.990005">
+          <type>nvt</type><name>Apache Log4j Remote Code Execution Vulnerability (Log4Shell)</name>
+          <family>Web application abuses</family><cvss_base>10.0</cvss_base>
+          <solution type="VendorFix">Update Log4j to 2.17.1 or later.</solution>
+          <refs><ref type="cve" id="CVE-2021-44228"/></refs>
+        </nvt>
+        <threat>High</threat><severity>10.0</severity><qod><value>75</value></qod>
+      </result>
+      <result id="r-008">
+        <name>OpenSSH Remote Code Execution Vulnerability (regreSSHion)</name>
+        <host>10.20.1.30<asset asset_id="a6"/><hostname>payroll-db</hostname></host>
+        <port>22/tcp</port>
+        <nvt oid="1.3.6.1.4.1.25623.1.0.990006">
+          <type>nvt</type><name>OpenSSH Remote Code Execution Vulnerability (regreSSHion)</name>
+          <family>General</family><cvss_base>8.1</cvss_base>
+          <solution type="VendorFix">Update OpenSSH to 9.8p1 or later.</solution>
+          <refs><ref type="cve" id="CVE-2024-6387"/></refs>
+        </nvt>
+        <threat>High</threat><severity>8.1</severity><qod><value>80</value></qod>
+      </result>
+      <result id="r-009">
+        <name>Telnet Unencrypted Cleartext Login</name>
+        <host>10.20.5.9<asset asset_id="a7"/></host>
+        <port>23/tcp</port>
+        <nvt oid="1.3.6.1.4.1.25623.1.0.990007">
+          <type>nvt</type><name>Telnet Unencrypted Cleartext Login</name>
+          <family>Useless services</family><cvss_base>4.8</cvss_base>
+          <solution type="Mitigation">Replace Telnet with SSH.</solution>
+          <refs/>
+        </nvt>
+        <threat>Medium</threat><severity>4.8</severity><qod><value>70</value></qod>
+      </result>
+      <result id="r-010">
+        <name>OS Detection Consolidation and Reporting</name>
+        <host>10.20.1.10<asset asset_id="a1"/></host>
+        <port>general/tcp</port>
+        <nvt oid="1.3.6.1.4.1.25623.1.0.105937">
+          <type>nvt</type><name>OS Detection Consolidation and Reporting</name><family>Product detection</family><cvss_base>0.0</cvss_base>
+        </nvt>
+        <threat>Log</threat><severity>0.0</severity><qod><value>80</value></qod>
+      </result>
+    </results>
+  </report>
+</report>
